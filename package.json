@@ -1,0 +1,46 @@
+{
+    "name": "code-resume",
+    "version": "1.0.0",
+    "description": "",
+    "private": true,
+    "scripts": {
+        "start": "webpack-dev-server --config ./webpack.config.dev",
+        "build": "webpack --config ./webpack.config.prod"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "react": "latest",
+        "react-dom": "latest",
+        "react-router-dom": "^5.1.2"
+    },
+    "devDependencies": {
+        "@babel/core": "latest",
+        "@babel/preset-env": "latest",
+        "@babel/preset-react": "^7.8.3",
+        "babel-loader": "latest",
+        "eslint": "^6.8.0",
+        "eslint-loader": "latest",
+        "html-webpack-plugin": "latest",
+        "styled-components": "^5.0.1",
+        "terser-webpack-plugin": "latest",
+        "webpack": "latest",
+        "webpack-cli": "latest",
+        "webpack-dev-server": "latest"
+    },
+    "eslintConfig": {
+        "parserOptions": {
+            "ecmaVersion": 6,
+            "sourceType": "module",
+            "ecmaFeatures": {
+                "jsx": true
+            }
+        }
+    },
+    "babel": {
+        "presets": [
+            "@babel/preset-env",
+            "@babel/preset-react"
+        ]
+    }
+}
