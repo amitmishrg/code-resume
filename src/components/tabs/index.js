@@ -1,9 +1,16 @@
 import React from 'react';
+import { NavLink } from "react-router-dom";
 import { Wrapper, Ul, Li} from './style';
-import { Tabs } from '../../constant';
+import Tabs from '../../data';
 
 const TabList = () => {
-    const List = Tabs.map(list => <Li key={list}>{list}</Li>);        
+    const List = Object.keys(Tabs).map(list => {
+        return (
+            <Li key={list}>
+                <NavLink to={`/${list.toLowerCase()}`} activeClassName="active">{list}</NavLink>
+            </Li>
+        );
+    });        
     return (
         <Wrapper>
             <Ul>

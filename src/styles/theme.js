@@ -9,7 +9,7 @@ export const Theme = {
     editorBg: '#262335',
 };
 
-export const ImportColor = {
+export const HeaderColor = {
     color0: '#72f1b8',
     color1: '#ff7edb',
     color2: '#fede5d',

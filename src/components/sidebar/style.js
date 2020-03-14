@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Theme } from '../../styles/theme';
+import { Theme } from 'Styles/theme';
 
 export const Wrapper = styled.div`
     background: ${Theme.sideBar};
@@ -21,11 +21,16 @@ export const Ul = styled.ul`
 `
 
 export const Li = styled.li`
-    padding-left: 20px;
-    &.active {
-        background: rgba(52, 41, 79, 0.4);
-    }
-    &:hover {
-        color: rgba(255, 255, 255, 1);
+    a {
+        text-transform: capitalize;
+        display: block;
+        padding-left: 20px;
+        color: rgba(255, 255, 255, 0.6);
+        &.active {
+            background: rgba(52, 41, 79, 0.4);
+        }
+        &:hover {
+            color: rgba(255, 255, 255, 1);
+        }
     }
 `

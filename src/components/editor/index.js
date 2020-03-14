@@ -1,36 +1,25 @@
 import React from 'react';
 import { Wrapper, Span, Pre } from './style';
-import { ImportColor, ContentColor } from '../../styles/theme';
+import { HeaderColor, ContentColor } from 'Styles/theme';
 
-const Editor = (props) => {
-    let text = "import Intro from 'Introduction'";
-    let header = text.split(' ').map((str, index) => <Span key={str} color={ImportColor[`color${index}`]}>{str} </Span>);
+const Editor = (props) => {    
+    const tab = props.path;
+    const info = props.data && props.data[tab];
+    let count = 0, color = '';
     
-    let content = `{
-        .Introduction {
-            Namaste {
-                Name: 'Amit Mishra',
-                Designation: 'Senior Web Developer'
-            }
-        }
-}`;
+    const header = info.header.split(' ').map((str, index) => {
+        return <Span key={str} color={HeaderColor[`color${index}`]}>{str} </Span>
+    });
 
-    let count = 0;
-    let color = '';
-    let detail = content.split("\n").map((str, index) => {
+    const detail = info.content.split("\n").map((str, index) => {
+        if (count >= 6) count = 0;
         if (index >= 6) {
             color = ContentColor[`color${count}`];
             count++;
         } else {
             color = ContentColor[`color${index}`]
         }
-        console.log(color);
-                        
-        return (
-            <Pre key={`${str + index}-detail`} color={color}>{str} </Pre>
-        );
-
-        i++;
+        return <Pre key={`${str + index}-detail`} color={color}>{str} </Pre>
     });
     
     return (

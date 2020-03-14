@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Theme } from '../../styles/theme';
+import { Theme } from 'Styles/theme';
 
 export const Wrapper = styled.div`
     background: ${Theme.titleBar};

@@ -9,7 +9,7 @@ const TitleBar = () => {
                 <MinimizeIcon></MinimizeIcon>
                 <ExpandIcon></ExpandIcon>
             </IconWrap>
-            <Title> Amit Mishra </Title>
+            <Title> Amit Mishra ~ Senior Web Developer</Title>
         </Wrapper>
     )
 }
