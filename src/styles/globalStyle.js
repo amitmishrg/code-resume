@@ -1,16 +1,14 @@
 import styled, { createGlobalStyle, css } from 'styled-components';
-import { Theme } from './theme';
 
 const fontFamily = 'Monaco, Menlo, Inconsolata, "Courier New", monospace';
 
 export const GlobalStyle =  createGlobalStyle`
 
   body {
-    background: ${Theme.body};
+    background: ${props => props.theme.body};
     padding: 0;
     margin: 0;
     font-family: ${fontFamily};
-    color: #fff;
     overflow: hidden;
   }
 
@@ -40,5 +38,5 @@ export const Container = styled.div`
 `
 export const ContentWrap = styled.div`
   width: calc(100% - 227px);
-  background: ${Theme.editorBg};
+  background: ${props => props.theme.editorBg};
 `

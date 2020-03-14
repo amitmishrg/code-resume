@@ -1,8 +1,7 @@
 import styled from 'styled-components';
-import { Theme } from 'Styles/theme';
 
 export const Wrapper = styled.div`
-    background: ${Theme.titleBar};
+    background: ${props => props.theme.titleBar};
     width: 100%;
     height: 20px;
     position: relative;
@@ -42,5 +41,5 @@ export const ExpandIcon = styled(Icon)`
 
 export const Title = styled.p`
     font-size: 12px;
-    color: rgba(204, 204, 204, 0.6);
+    color: ${props => props.theme.textColor};
 `;

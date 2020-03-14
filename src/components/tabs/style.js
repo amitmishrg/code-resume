@@ -1,14 +1,13 @@
 import styled from 'styled-components';
-import { Theme } from 'Styles/theme';
 
 export const Wrapper = styled.div`
-    background: ${Theme.sideBar};
+    background: ${props => props.theme.sideBar};
     font-size: 13px;
     line-height: 18px;
 `;
 
 export const Ul = styled.ul`
-    background: ${Theme.tabs};
+    background: ${props => props.theme.tabs};
     margin: 0;
     display: inline-flex;
     align-items: center;
@@ -18,16 +17,16 @@ export const Ul = styled.ul`
 export const Li = styled.li`
     position: relative;
     a {
-        color: rgba(255, 255, 255, 0.5);
+        color: ${props => props.theme.textColor};
         display: inline-block;
         padding: 10px 25px;
         &.active {
-            background: ${Theme.sideBar};
-            color: rgba(255, 255, 255, 1);
+            background: ${props => props.theme.sideBar};
+            color: ${props => props.theme.textActiveColor};
             &:after {
                 content: '';
                 position: absolute;
-                background: ${Theme.tabsBorderBottom};
+                background: ${props => props.theme.tabsBorderBottom};
                 height:1px;
                 width: 100%;
                 left: 0;
@@ -35,7 +34,7 @@ export const Li = styled.li`
             }
         }
         &:hover {
-            color: rgba(255, 255, 255, 1);
+            color: ${props => props.theme.textActiveColor};
         }
     }
 `

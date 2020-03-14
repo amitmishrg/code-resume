@@ -1,21 +1,33 @@
 import styled from 'styled-components';
-import { Theme } from 'Styles/theme';
 
 export const Wrapper = styled.div`
-    background: ${Theme.activityBar};
+    background: ${props => props.theme.activityBar};
     text-align: center;
     width: 50px;
-    li {
-        margin-bottom: 30px;
-    }
+    position: relative;
+`;
+
+export const Link = styled.a`
+    display: block;
+    margin-bottom: 30px;
     svg {
         cursor: pointer;
         width: 25px;
         height: 25px;
-        fill: rgba(255, 255, 255, 0.5);
+        fill: ${props => props.theme.textColor};
         &:hover {
-            fill: rgba(255, 255, 255, 0.8);
+            fill: ${props => props.theme.textActiveColor};
         }
     }
 `;
 
+export const Mode = styled.div`
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    svg {
+        cursor: pointer;
+        fill: ${props => props.theme.mode};
+    }
+`;

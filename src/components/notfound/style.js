@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Theme } from 'Styles/theme';
 
 export const Wrapper = styled.div`
     height: calc(100vh - 58px);
@@ -14,7 +13,7 @@ export const Wrapper = styled.div`
         margin: 0 auto;
         transform: translateY(-50%);
         .left {
-            stop-color: ${Theme.tabsBorderBottom}
+            stop-color: ${props => props.theme.tabsBorderBottom};
         }
         .right {
             

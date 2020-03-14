@@ -1,11 +1,10 @@
 import styled from 'styled-components';
-import { Theme } from 'Styles/theme';
 
 export const Wrapper = styled.div`
-    background: ${Theme.sideBar};
+    background: ${props => props.theme.sideBar};
     font-size: 13px;
     line-height: 30px;
-    color: rgba(255, 255, 255, 0.6);
+    color: ${props => props.theme.textColor};
     width: 177px;
 `;
 
@@ -24,13 +23,14 @@ export const Li = styled.li`
     a {
         text-transform: capitalize;
         display: block;
-        padding-left: 20px;
-        color: rgba(255, 255, 255, 0.6);
+        padding: 5px 10px 5px 20px;
+        color: ${props => props.theme.textColor};
         &.active {
-            background: rgba(52, 41, 79, 0.4);
+            background: ${props => props.theme.sideBarActiveBg};
+            color: ${props => props.theme.textActiveColor};
         }
         &:hover {
-            color: rgba(255, 255, 255, 1);
+            color: ${props => props.theme.textActiveColor};
         }
     }
 `
