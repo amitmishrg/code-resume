@@ -1,7 +1,8 @@
 import React from 'react';
 import { Wrapper, IconWrap, CloseIcon, MinimizeIcon, ExpandIcon, Title} from './style'
 
-const TitleBar = () => {
+const TitleBar = (props) => {
+        
     return (
         <Wrapper>
             <IconWrap>
@@ -9,7 +10,7 @@ const TitleBar = () => {
                 <MinimizeIcon></MinimizeIcon>
                 <ExpandIcon></ExpandIcon>
             </IconWrap>
-            <Title> Amit Mishra ~ Senior Web Developer</Title>
+            <Title>{props.title}</Title>
         </Wrapper>
     )
 }

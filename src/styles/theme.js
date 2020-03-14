@@ -11,6 +11,7 @@ export const Theme = {
         tabsBorderBottom: '#880088',
         editorBg: '#262335',
         textColor: 'rgba(255, 255, 255, 0.5)',
+        textLightColor: 'rgba(255, 255, 255, 0.3)',
         textActiveColor: 'rgba(255, 255, 255, 0.8)',
         headerColor: {
             color0: '#72f1b8',
@@ -39,6 +40,7 @@ export const Theme = {
         tabsBorderBottom: 'rgba(51, 51, 51, 0.9)',
         editorBg: '#fafafa',
         textColor: 'rgba(51, 51, 51, 0.7)',
+        textLightColor: 'rgba(51, 51, 51, 0.3)',
         textActiveColor: 'rgba(51, 51, 51, 0.9)',
         headerColor: {
             color0: '#a626a4',

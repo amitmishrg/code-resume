@@ -1,3 +1,4 @@
+export const Title = 'Amit Mishra ~ Senior Web Developer';
 
 export const Resume = {
     intoduction: `{ 
@@ -117,3 +118,4 @@ export const SocialLinks = {
     twitter: 'https://twitter.com/amitmishrg',
     github: 'https://github.com/amitmishrg'
 }
+

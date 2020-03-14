@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Wrapper, Span, Pre } from './style';
+import { Wrapper, Span, Pre, PageWrap, LineNo, FirstLineNo } from './style';
 import { ThemeContext } from 'styled-components';
 
 const Editor = (props) => {  
@@ -24,11 +24,17 @@ const Editor = (props) => {
         } else {
             color = theme.contentColor[`color${index}`]
         }
-        return <Pre key={`${str + index}-detail`} color={color}>{str} </Pre>
+        return (
+            <PageWrap key={index}>
+                <LineNo>{index + 2}</LineNo>
+                <Pre key={`${str + index}-detail`} color={color}>{str} </Pre>
+            </PageWrap>
+        )
     });
     
     return (
         <Wrapper>
+            <FirstLineNo>1</FirstLineNo>
             {header}
             {detail}
         </Wrapper>

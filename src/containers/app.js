@@ -28,7 +28,7 @@ export const App = (props) => {
         <ThemeProvider theme={mode}>
             <Router>
                 <GlobalStyle />
-                <TitleBar />
+                <TitleBar title={props.title}/>
                 <Container>
                     <SideBarWrapper>
                         <ActivityBar 
