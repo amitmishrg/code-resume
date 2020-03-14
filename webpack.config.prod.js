@@ -9,7 +9,8 @@ module.exports = {
 	entry: "./src/index.js",
 	output: {
 		filename: 'bundle.js',
-		path: path.resolve(__dirname, 'build')
+		path: path.resolve(__dirname, 'build'),
+		publicPath: '/'
 	},
 	module: {
 		rules: [
@@ -22,8 +23,29 @@ module.exports = {
 				test: /\.js$/,
 				exclude: /node_modules/,
 				use: "eslint-loader"
+			},
+			{
+				test: /\.svg$/,
+				use: [
+					{
+						loader: "babel-loader"
+					},
+					{
+						loader: "react-svg-loader",
+						options: {
+							jsx: true // true outputs JSX tags
+						}
+					}
+				]
 			}
 		]
+	},
+	resolve: {
+		alias: {
+			Cmpts: path.resolve(__dirname, 'src/components/'),
+			Styles: path.resolve(__dirname, 'src/styles/'),
+			Assets: path.resolve(__dirname, 'assets/')
+		}
 	},
 	optimization: {
 		minimizer: [
