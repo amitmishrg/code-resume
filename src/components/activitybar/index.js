@@ -10,7 +10,8 @@ const ActivityBar = (props) => {
     const { socialLinks } = props;
     const setMode = () => {
         const mode = props.currentTheme === 'dark' ? 'light' : 'dark';
-        props.setTheme(mode)
+        props.setTheme(mode);
+        window.localStorage.setItem('mode', mode);
     }
 
     return (

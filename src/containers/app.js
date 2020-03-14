@@ -11,7 +11,8 @@ import Editor from 'Cmpts/editor';
 import NotFound from 'Cmpts/notfound';
 
 export const App = (props) => {
-    const [theme, setTheme] = useState('dark');
+    const defaultTheme = window.localStorage.getItem('mode') || 'dark';
+    const [theme, setTheme] = useState(defaultTheme);
     const Data = props.data;
     const keys = Object.keys(Data);
     
