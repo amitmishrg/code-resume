@@ -36,7 +36,7 @@ export const Link = styled.a`
 
 export const Mode = styled.div`
     position: absolute;
-    bottom: 20px;
+    bottom: 25px;
     left: 0;
     right: 0;
     svg {
