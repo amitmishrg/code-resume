@@ -13,7 +13,15 @@ const Editor = (props) => {
     let count = 0, color = '';
     
     const header = head.split(' ').map((str, index) => {
-        return <Span key={str} color={theme.headerColor[`color${index}`]}>{str} </Span>
+        return (
+            <Span 
+                initial={{ y: -50 }}
+                animate={{y: 0}}
+                transition={{ duration: .3 }}  
+                key={str} color={theme.headerColor[`color${index}`]}>
+                {str} 
+                </Span>
+            )
     });
 
     const detail = content.split("\n").map((str, index) => {
@@ -27,7 +35,14 @@ const Editor = (props) => {
         return (
             <PageWrap key={index}>
                 <LineNo>{index + 2}</LineNo>
-                <Pre key={`${str + index}-detail`} color={color}>{str} </Pre>
+                <Pre 
+                    initial={{ x: 10 }}
+                    animate={{x: 0}}
+                    whileHover={{ x: 5 }} 
+                    transition={{ duration: .2 }} 
+                    key={`${str + index}-detail`} 
+                    color={color}>{str} 
+                </Pre>
             </PageWrap>
         )
     });

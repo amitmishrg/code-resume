@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { motion } from "framer-motion";
 
 export const Wrapper = styled.div`
     font-size: 1rem;
@@ -47,10 +48,12 @@ export const FirstLineNo = styled.span`
     }
 `;
 
-export const Span = styled.span`
+export const Span = styled(motion.span)`
     color: ${props => props.color};
+    display: inline-block;
+    margin-right: 10px;
 `;
 
-export const Pre = styled.pre`
+export const Pre = styled(motion.pre)`
     color: ${props => props.color}
 `;

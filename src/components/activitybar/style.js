@@ -1,10 +1,12 @@
 import styled from 'styled-components';
+import { motion } from "framer-motion";
 
 export const Wrapper = styled.div`
     background: ${props => props.theme.activityBar};
     text-align: center;
     width: 50px;
     position: relative;
+    z-index: 1;
     @media (max-width: 480px) {
       width: 30px;
     }
@@ -13,7 +15,7 @@ export const Wrapper = styled.div`
     }
 `;
 
-export const Link = styled.a`
+export const Link = styled(motion.a)`
     display: block;
     margin-bottom: 30px;
     @media (max-width: 480px) {
@@ -34,7 +36,7 @@ export const Link = styled.a`
     }
 `;
 
-export const Mode = styled.div`
+export const Mode = styled(motion.div)`
     position: absolute;
     bottom: 25px;
     left: 0;
@@ -50,3 +52,31 @@ export const Mode = styled.div`
         }
     }
 `;
+
+export const List = {
+    visible: {
+        transition: {
+            when: "beforeChildren",
+            staggerChildren: 0.3,
+            duration: 0.8
+        }
+    },
+    hidden: {
+        transition: {
+            when: "afterChildren",
+            staggerChildren: 0.3,
+            duration: 0.8
+        }
+    }
+};
+
+export const Item = {
+    visible: {
+        opacity: 1,
+        y: 0
+    },
+    hidden: {
+        opacity: 0,
+        y: -100
+    }
+};

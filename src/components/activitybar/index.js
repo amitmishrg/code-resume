@@ -1,5 +1,6 @@
 import React from 'react';
-import { Wrapper, Link, Mode } from './style';
+import { motion } from "framer-motion";
+import { Wrapper, Link, Mode, List, Item } from './style';
 import Twitter from 'Assets/svg/twitter.svg';
 import Linkedin from 'Assets/svg/linkedin.svg';
 import Github from 'Assets/svg/github.svg';
@@ -16,22 +17,26 @@ const ActivityBar = (props) => {
 
     return (
         <Wrapper>
-            <ul>
-                <Link href={socialLinks.resume} target="_blank">
+            <motion.ul
+                initial="hidden"
+                animate="visible"
+                variants={List}
+            >
+                <Link variants={Item} whileHover={{ scale: 1.2 }} href={socialLinks.resume} target="_blank">
                     <Resume />
                 </Link>
-                <Link href={socialLinks.linkedin} target="_blank">
+                <Link variants={Item} whileHover={{ scale: 1.2 }} href={socialLinks.linkedin} target="_blank">
                     <Linkedin />
                 </Link>
-                <Link href={socialLinks.twitter} target="_blank">
+                <Link variants={Item} whileHover={{ scale: 1.2 }} href={socialLinks.twitter} target="_blank">
                     <Twitter />
                 </Link>
-                <Link href={socialLinks.github} target="_blank">
+                <Link variants={Item} whileHover={{ scale: 1.2 }} href={socialLinks.github} target="_blank">
                     <Github />
                 </Link>
-            </ul>
+            </motion.ul>
 
-            <Mode>
+            <Mode whileHover={{ scale: 1.2 }}>
                 <Moon onClick={setMode}/>
             </Mode>
         </Wrapper>
