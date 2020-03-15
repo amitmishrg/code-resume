@@ -15,7 +15,8 @@
         "react": "latest",
         "react-dom": "latest",
         "react-router-dom": "^5.1.2",
-        "webpack": "latest"
+        "webpack": "latest",
+        "webpack-cli": "latest"
     },
     "devDependencies": {
         "@babel/core": "latest",
