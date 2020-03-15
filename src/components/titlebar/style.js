@@ -10,33 +10,12 @@ export const Wrapper = styled.div`
     align-items: center;
 `;
 
-export const IconWrap = styled.div`
+export const DivWrap = styled.div`
     position: absolute;
-    left: 5px;
-    display: flex;
-    align-items: center;
+    left: 0;
     height: 100%;
-`;
-
-export const Icon = styled.i`
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    display: inline-block;
-    cursor: pointer;
-    margin-right: 5px;
-`;
-
-export const CloseIcon = styled(Icon)`
-    background: #fe5e57;
-`;
-
-export const MinimizeIcon = styled(Icon)`
-    background: #febd2e;
-`;
-
-export const ExpandIcon = styled(Icon)`
-    background: #28ca41;
+    width: 50px;
+    background: ${props => props.theme.activityBar};
 `;
 
 export const Title = styled.p`

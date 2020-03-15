@@ -8,6 +8,9 @@ export const Wrapper = styled.div`
     @media (max-width: 480px) {
       width: 30px;
     }
+    ul {
+        margin-top: 5px;
+    }
 `;
 
 export const Link = styled.a`
