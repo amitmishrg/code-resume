@@ -68,7 +68,7 @@ module.exports = {
             orientation: "portrait",
             display: "standalone",
             start_url: ".",
-            short_name: 'CodeResume',
+            short_name: 'Resume',
             description: 'CodeResume || Portfolio!',
             theme_color: "#241b2f",
             background_color: "#262335",

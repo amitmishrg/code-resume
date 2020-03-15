@@ -16,6 +16,9 @@ export const DivWrap = styled.div`
     height: 100%;
     width: 50px;
     background: ${props => props.theme.activityBar};
+    @media (max-width: 480px) {
+      width: 30px;
+    }
 `;
 
 export const Title = styled.p`

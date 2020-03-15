@@ -21,7 +21,7 @@ export const Ul = styled.ul`
         }
         &::-webkit-scrollbar-thumb {
             border-radius: 10px;
-            background-color: ${props => props.theme.tabsBorderBottom};
+            background-color: ${props => props.theme.textColor};
         }
     }
 `
