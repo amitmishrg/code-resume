@@ -55,6 +55,6 @@ module.exports = {
 			filename: path.resolve(__dirname, 'build/index.html'),
 			template: path.resolve(__dirname, 'src/index.html')
 		}),
-		new webpack.HotModuleReplacementPlugin()
+		new webpack.HotModuleReplacementPlugin(),
 	]
 }

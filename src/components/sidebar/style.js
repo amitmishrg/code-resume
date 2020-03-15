@@ -2,16 +2,19 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
     background: ${props => props.theme.sideBar};
-    font-size: 13px;
-    line-height: 30px;
+    font-size: .93rem;
+    line-height: 2.15rem;
     color: ${props => props.theme.textColor};
     width: 177px;
+    @media (max-width: 768px) {
+      display: none;
+    }
 `;
 
 export const Label = styled.p`
-    font-size: 11px;
+    font-size: .8rem;
     text-transform: uppercase;
-    line-height: 22px;
+    line-height: 1.6rem;
     padding-left: 20px;
 `;
 

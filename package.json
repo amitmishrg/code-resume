@@ -27,7 +27,9 @@
         "terser-webpack-plugin": "latest",
         "webpack": "latest",
         "webpack-cli": "latest",
-        "webpack-dev-server": "latest"
+        "webpack-dev-server": "latest",
+        "webpack-pwa-manifest": "^4.2.0",
+        "workbox-webpack-plugin": "^5.0.0"
     },
     "eslintConfig": {
         "parserOptions": {

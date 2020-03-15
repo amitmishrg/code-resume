@@ -40,6 +40,6 @@ export const ExpandIcon = styled(Icon)`
 `;
 
 export const Title = styled.p`
-    font-size: 12px;
+    font-size: .86rem;
     color: ${props => props.theme.textColor};
 `;

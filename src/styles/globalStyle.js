@@ -4,6 +4,20 @@ const fontFamily = 'Monaco, Menlo, Inconsolata, "Courier New", monospace';
 
 export const GlobalStyle =  createGlobalStyle`
 
+  html {
+    font-size: 14px;
+    @media 
+    (-webkit-min-device-pixel-ratio: 2), 
+    (min-resolution: 192dpi) { 
+       font-size: 15px;
+    }
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
+    @media (max-width: 480px) {
+      font-size: 10px;
+    }
+  }
   body {
     background: ${props => props.theme.body};
     padding: 0;
@@ -32,6 +46,12 @@ export const SideBarWrapper = styled.div`
   display: inline-flex;
   width: 227px;
   height: calc(100vh - 20px);
+  @media (max-width: 768px) {
+      width: auto;
+  }
+  @media (max-width: 480px) {
+    height: calc(100vh - 12px);
+  }
 `
 export const Container = styled.div`
   display: flex;
@@ -39,4 +59,10 @@ export const Container = styled.div`
 export const ContentWrap = styled.div`
   width: calc(100% - 227px);
   background: ${props => props.theme.editorBg};
+  @media (max-width: 768px) {
+      width: calc(100% - 50px);
+  }
+  @media (max-width: 480px) {
+      width: calc(100% - 30px);
+  }
 `

@@ -4,11 +4,21 @@
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <title>PortFolio</title>
+    <title>Code Resume</title>
 </head>
 
 <body>
     <div id="root"></div>
+
+    <script>
+        // Check that service workers are supported
+        if('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load',() => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+    </script>
 </body>
 
 </html>
