@@ -113,7 +113,7 @@ export const Resume = {
 
 
 export const SocialLinks = {
-    resume: 'http://www.amit-mishra.in/resume.pdf',
+    resume: '/resume.pdf',
     linkedin: 'https://www.linkedin.com/in/amitmishrg/',
     twitter: 'https://twitter.com/amitmishrg',
     github: 'https://github.com/amitmishrg'
