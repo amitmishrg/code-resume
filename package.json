@@ -4,12 +4,14 @@
     "description": "",
     "private": true,
     "scripts": {
-        "start": "webpack-dev-server --config ./webpack.config.dev",
+        "start": "npm run build && node server",
+        "start-dev": "webpack-dev-server --config ./webpack.config.dev",
         "build": "webpack --config ./webpack.config.prod"
     },
     "author": "",
     "license": "ISC",
     "dependencies": {
+        "express": "^4.17.1",
         "react": "latest",
         "react-dom": "latest",
         "react-router-dom": "^5.1.2"
