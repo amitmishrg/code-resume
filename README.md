@@ -3,7 +3,7 @@
     <img src="./assets/icons/icon.png" width="200">
 </p>
 
-**Build your own Resume in seconds**
+**Build your own Resume in seconds.**
 
 # code-resume
 
@@ -15,29 +15,35 @@ https://code-resume.herokuapp.com/
 
 ## Preview 
 
-**Iphone -**
+**Iphone-**
 <p align="center">
-    <img aligh="left" src="./assets/preview/iphone-dark.png" alt="iphone-dark">
-    <img aligh="right" src="./assets/preview/iphone-light.png" alt="iphone-dark">
+    <img aligh="left" src="./assets/preview/iphone-dark.png" alt="iphone-dark"/>
+    <img aligh="right" src="./assets/preview/iphone-light.png" alt="iphone-dark"/>
 </p>
 
-**Ipad -**
+**Ipad-**
 <p align="center">
-    <img src="./assets/preview/ipad-dark.png" alt="ipad-dark">
+    <img src="./assets/preview/ipad-dark.png" alt="ipad-dark"/>
 </p>
 <p align="center">
-    <img src="./assets/preview/ipad-light.png" alt="ipad-light">
+    <img src="./assets/preview/ipad-light.png" alt="ipad-light"/>
  </p>   
 
-##Features 
+**PWA-**
 
-**Offline-first**
+<p align="center">
+    <img aligh="left" src="./assets/preview/pwa-app.png" alt="iphone-dark"/>
+</p>
+ 
+## Features
 
-**Theme support Dark & Light mode**
+* **Offline-first**
 
-**Easy Customization**
+* **Theme support Dark & Light mode**
 
-**Responsive for all devices**
+* **Easy Customization**
+
+* **Responsive for all devices**
 
 
 ## Quick start
@@ -72,7 +78,6 @@ Then open **index.js** & change details
 
 ```
 export const Title = 'Amit Mishra ~ Senior Web Developer';
-
 ```
 **Resume Details**
 
@@ -91,7 +96,6 @@ export const Resume = {
     }`
 
 }
-
 ```
 
 **Social Links**
@@ -101,12 +105,11 @@ export const Resume = {
     linkedin: 'https://www.linkedin.com/in/amitmishrg/',
     twitter: 'https://twitter.com/amitmishrg',
     github: 'https://github.com/amitmishrg'
-
 ```
-
-You can add more tabs by adding details. 
 
 
 ## License
 
-[MIT](LICENSE)
+This project is licensed under the [MIT](LICENSE) license.
+
+
