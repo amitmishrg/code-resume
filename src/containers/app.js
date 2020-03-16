@@ -1,14 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, Suspense } from 'react';
 import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 import { GlobalStyle, SideBarWrapper, Container, ContentWrap } from "Styles/globalStyle";
 import { ThemeProvider } from "styled-components";
 import { Theme } from 'Styles/theme';
-import TitleBar from 'Cmpts/titlebar';
-import ActivityBar from 'Cmpts/activitybar';
-import SideBar from 'Cmpts/sidebar';
-import TabList from 'Cmpts/tabs';
-import Editor from 'Cmpts/editor';
-import NotFound from 'Cmpts/notfound';
+
+const TitleBar = React.lazy(() => import('Cmpts/titlebar'));
+const ActivityBar = React.lazy(() => import('Cmpts/activitybar'));
+const SideBar = React.lazy(() => import('Cmpts/sidebar'));
+const TabList = React.lazy(() => import('Cmpts/tabs'));
+const Editor = React.lazy(() => import('Cmpts/editor'));
+const NotFound = React.lazy(() => import('Cmpts/notfound'));
 
 export const App = (props) => {
     const defaultTheme = window.localStorage.getItem('mode') || 'dark';
@@ -27,28 +28,30 @@ export const App = (props) => {
     return (
         <ThemeProvider theme={mode}>
             <Router>
-                <GlobalStyle />
-                <TitleBar title={props.title}/>
-                <Container>
-                    <SideBarWrapper>
-                        <ActivityBar 
-                            socialLinks={props.socialLinks}
-                            currentTheme={theme}
-                            setTheme={setTheme}
-                        />
-                        <SideBar data={Data} />
-                    </SideBarWrapper>
-                    <ContentWrap>
-                        <TabList data={Data} />
-                        <Switch>
-                            {routePaths}
-                            <Redirect exact from="/" to={keys[0]} />
-                            <Route>
-                                <NotFound />
-                            </Route>
-                        </Switch>
-                    </ContentWrap>
-                </Container>
+                <Suspense fallback={<div>Loading...</div>}>
+                    <GlobalStyle />
+                        <TitleBar title={props.title}/>
+                    <Container>
+                        <SideBarWrapper>
+                            <ActivityBar 
+                                socialLinks={props.socialLinks}
+                                currentTheme={theme}
+                                setTheme={setTheme}
+                            />
+                            <SideBar data={Data} />
+                        </SideBarWrapper>
+                        <ContentWrap>
+                            <TabList data={Data} />
+                            <Switch>
+                                {routePaths}
+                                <Redirect exact from="/" to={keys[0]} />
+                                <Route>
+                                    <NotFound />
+                                </Route>
+                            </Switch>
+                        </ContentWrap>
+                    </Container>
+                </Suspense>
             </Router>
         </ThemeProvider>
     )
