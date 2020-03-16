@@ -11,6 +11,7 @@ export const Wrapper = styled.div`
     position: relative;
     @media (max-width: 480px) {
       height: calc(100vh - 73px);
+      padding: 10px 10px 10px 35px;
     }
     &::-webkit-scrollbar {
         width: 4px;

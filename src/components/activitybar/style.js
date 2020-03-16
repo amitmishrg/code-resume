@@ -58,7 +58,7 @@ export const List = {
         transition: {
             when: "beforeChildren",
             staggerChildren: 0.3,
-            duration: 0.8
+            duration: 0.3
         }
     },
     hidden: {
