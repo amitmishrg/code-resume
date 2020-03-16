@@ -3,7 +3,7 @@
     <img src="./assets/icons/icon.png" width="200">
 </p>
 
-**Build your own Resume in seconds.**
+**🔥Build your own Resume in seconds.**
 
 # code-resume
 
@@ -32,7 +32,7 @@ https://code-resume.herokuapp.com/
 **PWA-**
 
 <p align="center">
-    <img aligh="left" src="./assets/preview/pwa-app.png" alt="iphone-dark"/>
+    <img aligh="left" src="./assets/preview/pwa-app.png" alt="pwa-preview"/>
 </p>
  
 ## Features
