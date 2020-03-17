@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-d
 import { GlobalStyle, SideBarWrapper, Container, ContentWrap } from "Styles/globalStyle";
 import { ThemeProvider } from "styled-components";
 import { Theme } from 'Styles/theme';
+import useLocalStorage from 'Cmpts/hooks';
 
 const TitleBar = React.lazy(() => import('Cmpts/titlebar'));
 const ActivityBar = React.lazy(() => import('Cmpts/activitybar'));
@@ -11,13 +12,12 @@ const TabList = React.lazy(() => import('Cmpts/tabs'));
 const Editor = React.lazy(() => import('Cmpts/editor'));
 const NotFound = React.lazy(() => import('Cmpts/notfound'));
 
-export const App = (props) => {
-    const defaultTheme = window.localStorage.getItem('mode') || 'dark';
-    const [theme, setTheme] = useState(defaultTheme);
+const App = (props) => {
+    const [theme, setTheme] = useLocalStorage('mode');
+    const mode = theme === 'dark' ? Theme.dark : Theme.light;
+
     const Data = props.data;
     const keys = Object.keys(Data);
-    
-    const mode = theme === 'dark' ? Theme.dark : Theme.light;
     const routePaths = keys.map(path => {
         return (
             <Route path={`/${path}`} key={path}>
@@ -35,7 +35,7 @@ export const App = (props) => {
                         <SideBarWrapper>
                             <ActivityBar 
                                 socialLinks={props.socialLinks}
-                                currentTheme={theme}
+                                theme={theme}
                                 setTheme={setTheme}
                             />
                             <SideBar data={Data} />
@@ -56,3 +56,5 @@ export const App = (props) => {
         </ThemeProvider>
     )
 }
+
+export default App;

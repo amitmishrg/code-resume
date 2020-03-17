@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from "react-dom";
-import { App } from './containers/app';
+import App from './containers/app';
 import { Resume, SocialLinks, Title } from '../data';
 
 render(

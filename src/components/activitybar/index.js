@@ -8,11 +8,11 @@ import Resume from 'Assets/svg/resume.svg';
 import Moon from 'Assets/svg/moon.svg';
 
 const ActivityBar = (props) => {
-    const { socialLinks } = props;
+    const { socialLinks, theme, setTheme } = props;
+
     const setMode = () => {
-        const mode = props.currentTheme === 'dark' ? 'light' : 'dark';
-        props.setTheme(mode);
-        window.localStorage.setItem('mode', mode);
+        const mode = theme === 'dark' ? 'light' : 'dark';
+        setTheme(mode);
     }
 
     return (
