@@ -1,7 +1,7 @@
 export const Title = 'Amit Mishra ~ Senior Web Developer';
 
 export const Resume = {
-    intoduction: `{ 
+    introduction: `{ 
         Introduction = () => { 
             Namaste: { 
                 Name: 'Amit Mishra', 
