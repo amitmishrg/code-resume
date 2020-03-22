@@ -1,6 +1,6 @@
 
 <p align="center">
-    <img src="./assets/icons/icon.png" width="200">
+    <img src="http://code-resume.herokuapp.com/icons/icon.png" width="200">
 </p>
 
 **🔥Build your own Resume in seconds.**
@@ -17,22 +17,22 @@ https://code-resume.herokuapp.com/
 
 **Iphone-**
 <p align="center">
-    <img aligh="left" src="./assets/preview/iphone-dark.png" alt="iphone-dark"/>
-    <img aligh="right" src="./assets/preview/iphone-light.png" alt="iphone-dark"/>
+    <img aligh="left" src="http://code-resume.herokuapp.com/preview/iphone-dark.png" alt="iphone-dark"/>
+    <img aligh="right" src="http://code-resume.herokuapp.com/preview/iphone-light.png" alt="iphone-dark"/>
 </p>
 
 **Ipad-**
 <p align="center">
-    <img src="./assets/preview/ipad-dark.png" alt="ipad-dark"/>
+    <img src="http://code-resume.herokuapp.com/preview/ipad-dark.png" alt="ipad-dark"/>
 </p>
 <p align="center">
-    <img src="./assets/preview/ipad-light.png" alt="ipad-light"/>
+    <img src="http://code-resume.herokuapp.com/preview/ipad-light.png" alt="ipad-light"/>
  </p>   
 
 **PWA-**
 
 <p align="center">
-    <img aligh="left" src="./assets/preview/pwa-app.png" alt="pwa-preview"/>
+    <img aligh="left" src="http://code-resume.herokuapp.com/preview/pwa-app.png" alt="pwa-preview"/>
 </p>
  
 ## Features
