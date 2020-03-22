@@ -41,6 +41,9 @@ export const Mode = styled(motion.div)`
     bottom: 25px;
     left: 0;
     right: 0;
+    @media print {
+        display:none;
+    }
     svg {
         width: 25px;
         height: 25px;

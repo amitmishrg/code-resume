@@ -4,6 +4,9 @@ export const Wrapper = styled.div`
     background: ${props => props.theme.sideBar};
     font-size: .93rem;
     line-height: 1.3rem;
+    @media print {
+        display: none;
+    }
 `;
 
 export const Ul = styled.ul`
