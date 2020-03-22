@@ -52,14 +52,14 @@ export const Resume = {
                 react: 'React JS',
                 redux: 'Redux',
                 saga: 'Redux-Saga',
-                pwa: 'Prograsive Web App',
+                pwa: 'Progressive Web App',
             }
             BuildTools: {
                 webpack: 'Webpack',
                 gulp: 'Gulp'
             }
             Tools: {
-                seketch: 'Seketch',
+                sketch: 'Sketch',
                 github: 'Github',
                 gitlab: 'Gitlab',
                 code: 'VS Code'
