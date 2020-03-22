@@ -52,7 +52,7 @@ export const Resume = {
                 react: 'React JS',
                 redux: 'Redux',
                 saga: 'Redux-Saga',
-                pwa: 'Prograsive Web App',
+                pwa: 'Progressive Web App',
                 node: 'Node JS'
             },
             BuildTools: {
@@ -69,7 +69,7 @@ export const Resume = {
                 vc: 'Version Control'
             },
             Tools: {
-                seketch: 'Seketch',
+                sketch: 'Sketch',
                 github: 'Github',
                 gitlab: 'Gitlab',
                 code: 'VS Code'
