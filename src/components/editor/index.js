@@ -31,18 +31,36 @@ const Editor = (props) => {
             count++;
         } else {
             color = theme.contentColor[`color${index}`]
-        }
-        return (
-            <PageWrap key={index}>
-                <LineNo>{index + 2}</LineNo>
+        }      
+        
+        let renderPre = (
+            <Pre 
+                initial={{ x: 10 }}
+                animate={{x: 0}}
+                whileHover={{ x: 5 }} 
+                transition={{ duration: .2 }} 
+                key={`${str + index}-detail`} 
+                color={color}
+            >{str}</Pre>
+        );
+
+        if (str.includes('href=')) {
+            renderPre = (
                 <Pre 
                     initial={{ x: 10 }}
                     animate={{x: 0}}
                     whileHover={{ x: 5 }} 
                     transition={{ duration: .2 }} 
                     key={`${str + index}-detail`} 
-                    color={color}>{str} 
-                </Pre>
+                    color={color}
+                    dangerouslySetInnerHTML={{__html: str}}></Pre>
+            )
+        } 
+
+        return (
+            <PageWrap key={index}>
+                <LineNo>{index + 2}</LineNo>
+                {renderPre}
             </PageWrap>
         )
     });

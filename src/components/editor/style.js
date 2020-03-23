@@ -25,6 +25,9 @@ export const Wrapper = styled.div`
 
 export const PageWrap = styled.div`
     position: relative;
+    a {
+        color: inherit;
+    }
 `;
 
 export const LineNo = styled.span`

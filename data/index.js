@@ -80,17 +80,17 @@ export const Resume = {
     projects: `{
         Projects = () => {
             zeta: {
-                url: 'https://www.zeta.tech/zeta-spotlight/',
+                url: <a target='_blank' href='https://www.zeta.tech/zeta-spotlight/'>'https://www.zeta.tech/zeta-spotlight'</a>
             },
             Collegedunia: {
-                url: 'https://collegedunia.com/',
+                url: <a target='_blank' href='https://collegedunia.com/'>'https://collegedunia.com/'</a>
             },
             lib4dev: {
-                url: 'http://www.lib4dev.in/',
-                github: 'https://github.com/amitmishrg/lib4dev'
+                url: <a target='_blank' href='http://www.lib4dev.in/'>'http://www.lib4dev.in/'</a>,
+                github: <a target='_blank' href='https://github.com/amitmishrg/lib4dev'>'https://github.com/amitmishrg/lib4dev'</a>
             },
             Onlinemocks: {
-                url: 'http://onlinemocks.com/',
+                url: <a target='_blank' href='http://onlinemocks.com/'>'http://onlinemocks.com/'</a>
             }
         }
 }`,
@@ -98,23 +98,23 @@ export const Resume = {
     playground: `{
         Playground = () => {   
             Code Resume: {
-                url: 'https://code-resume.herokuapp.com/',
-                github: 'https://github.com/amitmishrg/code-resume'
+                url: <a target='_blank' href='https://code-resume.herokuapp.com/'>'https://code-resume.herokuapp.com/'</a>,
+                github: <a target='_blank' href='https://github.com/amitmishrg/code-resume'>'https://github.com/amitmishrg/code-resume'</a>
             },    
             offline News App: {
-                url: 'https://offline-news-app.herokuapp.com/',
-                github: 'https://github.com/amitmishrg/offline-news-app'
+                url: <a target='_blank' href='https://offline-news-app.herokuapp.com/'>'https://offline-news-app.herokuapp.com/'</a>,
+                github: <a target='_blank' href='https://github.com/amitmishrg/offline-news-app'>'https://github.com/amitmishrg/offline-news-app'</a>
             },
             CSS Animation: {
-                url: 'https://codepen.io/amitmishrg/pen/vxoWVd',
-                github: 'https://github.com/amitmishrg/CSS-Designs-and-Animation'
+                url: <a target='_blank' href='https://codepen.io/amitmishrg/pen/vxoWVd'>'https://codepen.io/amitmishrg/pen/vxoWVd'</a>,
+                github: <a target='_blank' href='https://github.com/amitmishrg/CSS-Designs-and-Animation'>'https://github.com/amitmishrg/CSS-Designs-and-Animation'</a>
             },
             Wrist Watch: {
-                url: 'https://codepen.io/amitmishrg/pen/evqeQp',
-                github: 'https://github.com/amitmishrg/wrist-watch'
+                url: <a target='_blank' href='https://codepen.io/amitmishrg/pen/evqeQp'>'https://codepen.io/amitmishrg/pen/evqeQp'</a>,
+                github: <a target='_blank' href='https://github.com/amitmishrg/wrist-watch'>'https://github.com/amitmishrg/wrist-watch'</a>
             },
             Mini Portfolio: {
-                url: 'https://codepen.io/amitmishrg/pen/pLELXZ'
+                url: <a target='_blank' href='https://codepen.io/amitmishrg/pen/pLELXZ'>'https://codepen.io/amitmishrg/pen/pLELXZ'</a>
             }
         }
 }`,
