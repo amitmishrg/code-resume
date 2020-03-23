@@ -12,7 +12,7 @@ const createPdf = async (pdfUrls, hostname) => {
             await page.goto(`${hostname}${url}`, {waitUntil: 'networkidle2'});
             await page.pdf({
                 path: pdfPath, 
-                format: 'Letter',
+                format: 'Legal',
                 printBackground: true
             });
             files.push(pdfPath);

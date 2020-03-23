@@ -40,7 +40,7 @@ const ActivityBar = (props) => {
                 </Link>
             </motion.ul>
 
-            <Mode whileHover={{ scale: 1.2 }}>
+            <Mode whileHover={{ scale: 1.2 }} title="Change Theme">
                 <Moon onClick={setMode}/>
             </Mode>
         </Wrapper>

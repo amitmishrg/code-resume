@@ -1,6 +1,6 @@
 import React, { useState, Suspense } from 'react';
 import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
-import { GlobalStyle, SideBarWrapper, Container, ContentWrap } from "Styles/globalStyle";
+import { GlobalStyle, SideBarWrapper, Container, ContentWrap, LoadingChunks } from "Styles/globalStyle";
 import { ThemeProvider } from "styled-components";
 import { Theme } from 'Styles/theme';
 import useLocalStorage from 'Cmpts/hooks';
@@ -28,7 +28,7 @@ const App = (props) => {
     return (
         <ThemeProvider theme={mode}>
             <Router>
-                <Suspense fallback={<div>Loading...</div>}>
+                <Suspense fallback={<LoadingChunks className="loading-chunks">Loading...</LoadingChunks>}>
                     <GlobalStyle />
                         <TitleBar title={props.title}/>
                     <Container>

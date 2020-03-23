@@ -65,4 +65,14 @@ export const ContentWrap = styled.div`
   @media (max-width: 480px) {
       width: calc(100% - 30px);
   }
-`
+  `
+
+  export const LoadingChunks = styled.div`
+    text-align: center;
+    color: ${props => props.theme.textColor};
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  `

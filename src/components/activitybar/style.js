@@ -26,6 +26,15 @@ export const Link = styled(motion.a)`
         width: 25px;
         height: 25px;
         fill: ${props => props.theme.textColor};
+        &.pdf {
+            .path {
+                stroke-width: 3px;
+                stroke: ${props => props.theme.textColor};
+            }
+            @media print {
+                display:none;
+            }
+        }
         &:hover {
             fill: ${props => props.theme.textActiveColor};
         }
