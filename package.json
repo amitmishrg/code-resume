@@ -12,6 +12,7 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
+        "@babel/register": "^7.9.0",
         "compression": "^1.7.4",
         "core-js": "^3.6.4",
         "easy-pdf-merge": "^0.2.2",
@@ -28,7 +29,6 @@
         "@babel/core": "latest",
         "@babel/preset-env": "latest",
         "@babel/preset-react": "^7.8.3",
-        "@babel/register": "^7.9.0",
         "babel-eslint": "^10.1.0",
         "babel-loader": "latest",
         "eslint": "^6.8.0",
