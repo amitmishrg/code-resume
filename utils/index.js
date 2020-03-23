@@ -4,7 +4,7 @@ const path = require("path");
 
 const createPdf = async (pdfUrls, hostname) => {
     try {
-        const browser = await puppeteer.launch();
+        const browser = await puppeteer.launch({ args: ['--no-sandbox'] });
         const page = await browser.newPage();
         let files = [];
         for (const url of pdfUrls) {
