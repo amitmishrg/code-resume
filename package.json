@@ -4,7 +4,8 @@
     "description": "",
     "private": true,
     "scripts": {
-        "start": "npm run build && node server",
+        "start": "npm run build && node start.js",
+        "server": "nodemon --inspect start.js",
         "start-dev": "webpack-dev-server --config ./webpack.config.dev",
         "build": "webpack --config ./webpack.config.prod"
     },
@@ -12,16 +13,22 @@
     "license": "ISC",
     "dependencies": {
         "compression": "^1.7.4",
+        "core-js": "^3.6.4",
+        "easy-pdf-merge": "^0.2.2",
         "express": "^4.17.1",
+        "nodemon": "^2.0.2",
+        "puppeteer": "^2.1.1",
         "react": "latest",
         "react-dom": "latest",
         "react-router-dom": "^5.1.2",
+        "regenerator-runtime": "^0.13.5",
         "webpack": "latest"
     },
     "devDependencies": {
         "@babel/core": "latest",
         "@babel/preset-env": "latest",
         "@babel/preset-react": "^7.8.3",
+        "@babel/register": "^7.9.0",
         "babel-eslint": "^10.1.0",
         "babel-loader": "latest",
         "eslint": "^6.8.0",

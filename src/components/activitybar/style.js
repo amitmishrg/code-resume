@@ -60,15 +60,15 @@ export const List = {
     visible: {
         transition: {
             when: "beforeChildren",
-            staggerChildren: 0.3,
-            duration: 0.3
+            staggerChildren: 0.1,
+            duration: 0.1
         }
     },
     hidden: {
         transition: {
             when: "afterChildren",
-            staggerChildren: 0.3,
-            duration: 0.8
+            staggerChildren: 0.1,
+            duration: 0.1
         }
     }
 };
