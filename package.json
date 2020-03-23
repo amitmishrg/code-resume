@@ -12,6 +12,7 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
+        "@babel/preset-env": "latest",
         "@babel/register": "^7.9.0",
         "compression": "^1.7.4",
         "core-js": "^3.6.4",
