@@ -18,9 +18,9 @@ app.get("/download", (req, res) => {
     const pdfUrls = Object.keys(Resume);
     try {
       const pdfFiles = await Utils.createPdf(pdfUrls, hostname);
-      //await Utils.mergePdf(pdfFiles, mergePdfName);
+      await Utils.mergePdf(pdfFiles, mergePdfName);
 
-      res.download(pdfFiles[0],  (err) => {
+      res.download(mergePdfName,  (err) => {
         if (err) {
           console.log(err);
         } else {
