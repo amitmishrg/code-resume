@@ -13,6 +13,19 @@
 
 https://code-resume.herokuapp.com/
 
+## Features
+
+* **Offline-first**
+
+* **Theme support Dark & Light mode**
+
+* **Export PDF**
+  
+* **Easy Customization**
+
+* **Responsive for all devices**
+
+
 ## Preview 
 
 **Iphone-**
@@ -35,16 +48,6 @@ https://code-resume.herokuapp.com/
     <img aligh="left" src="http://code-resume.herokuapp.com/preview/pwa-app.png" alt="pwa-preview"/>
 </p>
  
-## Features
-
-* **Offline-first**
-
-* **Theme support Dark & Light mode**
-
-* **Easy Customization**
-
-* **Responsive for all devices**
-
 
 ## Quick start
 

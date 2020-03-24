@@ -26,6 +26,15 @@ export const Link = styled(motion.a)`
         width: 25px;
         height: 25px;
         fill: ${props => props.theme.textColor};
+        &.pdf {
+            .path {
+                stroke-width: 3px;
+                stroke: ${props => props.theme.textColor};
+            }
+            @media print {
+                display:none;
+            }
+        }
         &:hover {
             fill: ${props => props.theme.textActiveColor};
         }
@@ -60,15 +69,15 @@ export const List = {
     visible: {
         transition: {
             when: "beforeChildren",
-            staggerChildren: 0.3,
-            duration: 0.3
+            staggerChildren: 0.1,
+            duration: 0.1
         }
     },
     hidden: {
         transition: {
             when: "afterChildren",
-            staggerChildren: 0.3,
-            duration: 0.8
+            staggerChildren: 0.1,
+            duration: 0.1
         }
     }
 };
