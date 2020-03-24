@@ -9,8 +9,7 @@ const createPdf = async (pdfUrls, hostname) => {
         let files = [];
         for (const url of pdfUrls) {          
             const pdfPath = `pdf/${url}.pdf`;            
-            await page.goto(`${hostname}${url}`, {waitUntil: 'networkidle2'});
-            await timeout(1000);
+            await page.goto(`${hostname}${url}`, {waitUntil: 'networkidle2', timeout: 0}});
             await page.pdf({
                 path: pdfPath, 
                 format: 'Legal',
