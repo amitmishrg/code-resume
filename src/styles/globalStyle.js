@@ -6,6 +6,7 @@ export const GlobalStyle =  createGlobalStyle`
 
   html {
     font-size: 14px;
+    -webkit-print-color-adjust: exact;
     @media 
     (-webkit-min-device-pixel-ratio: 2), 
     (min-resolution: 192dpi) { 

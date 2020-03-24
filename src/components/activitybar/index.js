@@ -35,7 +35,7 @@ const ActivityBar = (props) => {
                 <Link title="Github" variants={Item} whileHover={{ scale: 1.2 }} href={socialLinks.github} target="_blank">
                     <Github />
                 </Link>
-                <Link title="Export as PDF" variants={Item} whileHover={{ scale: 1.2 }} href="/download">
+                <Link title="Export as PDF" variants={Item} whileHover={{ scale: 1.2 }} href="/download" target="_blank">
                     <Pdf className="pdf"/>
                 </Link>
             </motion.ul>

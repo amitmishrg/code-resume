@@ -1,7 +1,6 @@
 const puppeteer = require('puppeteer');
 const PDFMerger = require('pdf-merger-js');
 const path = require("path");
-const merger = new PDFMerger();
 
 const createPdf = async (pdfUrls, hostname) => {
     try {
@@ -26,6 +25,7 @@ const createPdf = async (pdfUrls, hostname) => {
 }
 
 const mergePdf = async (pdfFiles, output) => {
+    const merger = new PDFMerger();
     pdfFiles.forEach(pdf => {
         merger.add(pdf);
     });

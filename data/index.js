@@ -1,3 +1,5 @@
+export const defaultTheme = 'dark'; // light
+
 export const Title = 'Amit Mishra ~ Senior Web Developer';
 
 export const Resume = {
@@ -136,4 +138,3 @@ export const SocialLinks = {
     twitter: 'https://twitter.com/amitmishrg',
     github: 'https://github.com/amitmishrg'
 }
-
