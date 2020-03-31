@@ -13,6 +13,8 @@ export const Theme = {
         textColor: 'rgba(255, 255, 255, 0.5)',
         textLightColor: 'rgba(255, 255, 255, 0.3)',
         textActiveColor: 'rgba(255, 255, 255, 0.8)',
+        forkMeBg: '#f1f1f1',
+        forkMeText: '#484848',
         headerColor: {
             color0: '#72f1b8',
             color1: '#ff7edb',
@@ -42,6 +44,8 @@ export const Theme = {
         textColor: 'rgba(51, 51, 51, 0.7)',
         textLightColor: 'rgba(51, 51, 51, 0.3)',
         textActiveColor: 'rgba(51, 51, 51, 0.9)',
+        forkMeBg: 'rgba(51, 51, 51, 0.9)',
+        forkMeText: '#fafafa',
         headerColor: {
             color0: '#a626a4',
             color1: '#e45649',

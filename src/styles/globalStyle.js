@@ -41,6 +41,28 @@ export const GlobalStyle =  createGlobalStyle`
     padding: 0;
     list-style: none;
   }
+  .fork-me {
+    background: ${props => props.theme.forkMeBg};
+    position: absolute;
+    color: #fff;
+    top: 24px;
+    right: -32px;
+    z-index: 1;
+    transform: rotate(45deg);
+    font-size: 8px;
+    padding: 5px 25px;
+    filter: blur(.2px);
+    box-shadow: 1px 4px 12px rgba(164,164,164,.3);
+    @media only screen and (max-width: 900px) {
+      display: none;
+    }
+    a {
+      display: block;
+      color: ${props => props.theme.forkMeText};
+      padding: 0;
+      font-weight: bold;
+      text-decoration: none;
+    }
 `;
 
 export const SideBarWrapper = styled.div`
