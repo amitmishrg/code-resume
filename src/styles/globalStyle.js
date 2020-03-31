@@ -53,6 +53,9 @@ export const GlobalStyle =  createGlobalStyle`
     padding: 5px 25px;
     filter: blur(.2px);
     box-shadow: 1px 4px 12px rgba(164,164,164,.3);
+    @media print {
+        display:none;
+    }
     @media only screen and (max-width: 900px) {
       display: none;
     }

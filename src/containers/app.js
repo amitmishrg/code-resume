@@ -6,7 +6,7 @@ import { Theme } from 'Styles/theme';
 import useLocalStorage from 'Cmpts/hooks';
 
 const TitleBar = React.lazy(() => import('Cmpts/titlebar'));
-const ForkMe = React.lazy(() => import('Cmpts/forkme'));
+// const ForkMe = React.lazy(() => import('Cmpts/forkme'));
 const ActivityBar = React.lazy(() => import('Cmpts/activitybar'));
 const SideBar = React.lazy(() => import('Cmpts/sidebar'));
 const TabList = React.lazy(() => import('Cmpts/tabs'));
@@ -31,7 +31,7 @@ const App = (props) => {
             <Router>
                 <Suspense fallback={<LoadingChunks className="loading-chunks">Loading...</LoadingChunks>}>
                     <GlobalStyle />
-                        <ForkMe />
+                        {/* <ForkMe /> */}
                         <TitleBar title={props.title}/>
                     <Container>
                         <SideBarWrapper>
