@@ -17,7 +17,7 @@
         "@babel/register": "^7.9.0",
         "compression": "^1.7.4",
         "core-js": "^3.6.4",
-        "express": "^4.17.1",
+        "express": "^4.17.3",
         "nodemon": "^2.0.2",
         "pdf-merger-js": "^3.0.1",
         "puppeteer": "^2.1.1",
